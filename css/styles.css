@@ -1,0 +1,77 @@
+
+/*  COLOR PALETTE  */
+:root {
+    --darkest-blue: #08112d;
+    --dark-blue: #142252;
+    --med-blue: #2A3F81;
+    --light-blue: #4A69D2;
+    --bright-blue: #427DF0;
+    --orange: #FF612F;
+    --yellow: #FFAC2F;
+    --green: #87D96A;
+    --white: #ECECEC;
+    --bg-gradient: linear-gradient(#142252, #2A3F81, #4A69D2);
+}
+
+body {
+    background: linear-gradient(45deg, #142252, #2A3F81, #4A69D2);
+    background-attachment: fixed; /*edit*/
+}
+
+/*  HEADER STYLES  */
+header {
+    width: 100%;
+    height: 64px;
+    display: flex;
+}
+
+#logo {
+    background-color: green;
+}
+
+nav {
+    background-color: var(--dark-blue);
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    display: flex;
+    justify-content:space-between;
+}
+
+nav li{
+    display: inline-block;
+    background-color: teal;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+
+}
+
+.searchBar {
+    background-color: var(--dark-blue);
+    width:calc(100% - 450px);
+}
+
+
+
+input[type=text] {
+    width: 100%;
+    background-color: var(--darkest-blue);
+    height: 30px;
+    border-radius: 40px;
+    border: 1px solid var(--light-blue);
+    padding: 5px;
+    font-size: 1em;
+    margin-top: 10px;
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text]:focus {
+    border: 1px solid red;
+}
+
+
+
+
+
